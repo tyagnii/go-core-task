@@ -15,9 +15,8 @@ var name string = "Golang"        // Тип string
 var isActive bool = true          // Тип bool
 var complexNum complex64 = 1 + 2i // Тип complex64
 
-func IdentType(n any) {
-	t := reflect.TypeOf(n).String()
-	fmt.Printf("Type of variable is %s\n", t)
+func IdentType(n any) string {
+	return reflect.TypeOf(n).String()
 
 }
 
